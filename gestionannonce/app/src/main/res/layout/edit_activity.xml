@@ -9,35 +9,35 @@
 
     <!--Edit text to enter Ad name-->
     <EditText
-        android:id="@+id/idEdtAdName"
+        android:id="@+id/idEdtAd_ID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Enter Ad Name" />
+        android:hint="Entrer l'ID de votre annonce" />
 
     <!--edit text to enter aD duration-->
-    <EditText
-        android:id="@+id/idEdtAdDuration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Enter Ad Duration" />
-
-    <!--edit text to display Ad tracks-->
-    <EditText
-        android:id="@+id/idEdtAdTracks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Enter Ad Tracks" />
-
-    <!--edit text for Ad description-->
     <EditText
         android:id="@+id/idEdtAdDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Enter Ad Description" />
+        android:hint="Enter LA description de votre annonce" />
+
+    <!--edit text to display Ad tracks-->
+    <EditText
+        android:id="@+id/idEdtAdphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Entrere votre numero de telephone" />
+
+    <!--edit text for Ad description-->
+    <EditText
+        android:id="@+id/idEdtAdemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Entrer votre email" />
 
     <!--button for adding new Ad-->
     <Button

@@ -19,7 +19,6 @@ import android.database.sqlite.SQLiteOpenHelper;
         // below variable is for our id column.
         private static final String ID_COL = "id";
 
-
         // below variable for our course description column.
         private static final String DESCRIPTION_COL = "description";
 
