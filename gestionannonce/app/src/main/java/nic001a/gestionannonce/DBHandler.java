@@ -51,7 +51,7 @@ import android.database.sqlite.SQLiteOpenHelper;
         }
 
         // this method is use to add new course to our sqlite database.
-        public void addNewCourse(String courseName, String courseDuration, String courseDescription, String courseTracks) {
+        public void addNewAd(String AD_ID, String AD_DESCRIPTION, String AD_PHONE, String AD_MAIL) {
 
             // on below line we are creating a variable for
             // our sqlite database and calling writable method
@@ -64,10 +64,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
             // on below line we are passing all values
             // along with its key and value pair.
-            values.put(ID_COL, courseName);
-            values.put(DESCRIPTION_COL, courseDuration);
-            values.put(PHONE_COL, courseDescription);
-            values.put(EMAIL_COL, courseTracks);
+            values.put(ID_COL, AD_ID);
+            values.put(DESCRIPTION_COL, AD_DESCRIPTION);
+            values.put(PHONE_COL, AD_PHONE);
+            values.put(EMAIL_COL, AD_MAIL);
 
             // after adding all values we are passing
             // content values to our table.
