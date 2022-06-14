@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //END OF ON_CREATE
+
     private void goToSellerActivity() {
         Intent switchActivity = new Intent(this, Logger.class);
         startActivity(switchActivity);

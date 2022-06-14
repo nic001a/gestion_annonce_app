@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/user_icon.xml" value="0.254" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/edit_.xml" value="0.2128623188405797" />
         <entry key="app/src/main/res/layout/edit_activity.xml" value="0.33" />
         <entry key="app/src/main/res/layout/guest_activity.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/login_activity.xml" value="0.1" />
