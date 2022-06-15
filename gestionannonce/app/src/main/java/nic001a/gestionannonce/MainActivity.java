@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button GuestButton;
@@ -39,11 +40,13 @@ public class MainActivity extends AppCompatActivity {
     private void goToSellerActivity() {
         Intent switchActivity = new Intent(this, Logger.class);
         startActivity(switchActivity);
+        Toast.makeText(this, "Bienvenue cher vendeur", Toast.LENGTH_SHORT).show();
     }
 
     private void goToBuyerActivity() {
         Intent switchActivity = new Intent(this, ViewAd.class);
         startActivity(switchActivity);
+        Toast.makeText(this, "Bienvenue cher utilisateur", Toast.LENGTH_SHORT).show();
     }
 
 }

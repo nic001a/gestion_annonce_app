@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,17 +26,31 @@ public class Logger extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login_();
+
+                if (mail.toString().isEmpty() && password.toString().isEmpty()) {
+                    Toast.makeText(Logger.this, "Merci d'entrer vos information pour vous connecter", Toast.LENGTH_SHORT).show();
+                }
+                if (login_() == true) {
+                    Toast.makeText(Logger.this, "Login successful", Toast.LENGTH_SHORT).show();
+                    login_();
+                }
+
             }
         });
 
     }
 
 
-    protected void login_() {
-       // if (mail.getText().equals("admin@seller.com") && password.getText().equals(("admin"))) {
-            Intent intent = new Intent(this, Editor.class);
-            startActivity(intent);
-      //  }
+    protected boolean login_() {
+        Intent intent = new Intent(this, Editor.class);
+        startActivity(intent);
+        if (mail.getText().equals("admin") && password.getText().equals(("admin"))) {
+
+            return true;
+        } else {
+            return false;
+        }
     }
 }
+
+
