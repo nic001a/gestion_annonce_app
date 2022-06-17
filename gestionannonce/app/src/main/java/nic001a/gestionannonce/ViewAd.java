@@ -17,14 +17,15 @@ public class ViewAd extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_ad);
-        view = findViewById(R.id.btnView);
+        view = findViewById(R.id.buttonViewAd);
+        DB = new dbHelper(this);
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Cursor res = DB.getData();
                 if (res.getCount() == 0) {
-                    Toast.makeText(ViewAd.this, "ID non existant", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ViewAd.this, "ID non éxistant", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 StringBuffer buffer = new StringBuffer();
@@ -32,7 +33,7 @@ public class ViewAd extends AppCompatActivity {
                     buffer.append("Name :" + res.getString(0) + "\n");
                     buffer.append("Contact :" + res.getString(1) + "\n");
                     buffer.append("Description :" + res.getString(2) + "\n\n");
-                    buffer.append("email :" + res.getString(3) + "\n\n\n");
+                    buffer.append("email :" + res.getString(3) + "\n\n");
                 }
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(ViewAd.this);
