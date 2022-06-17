@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Entrer les details de l'annonce"
-        android:textStyle="bold"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/name"
@@ -56,34 +56,52 @@
 
     <Button
         android:id="@+id/btnInsert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
         android:layout_below="@id/mail"
-        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#fb8500"
         android:text="Insert"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        app:cornerRadius="10dp" />
 
     <Button
         android:id="@+id/btnUpdate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
         android:layout_below="@id/btnInsert"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#fb8500"
         android:text="Update"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        app:cornerRadius="10dp" />
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
         android:layout_below="@id/btnUpdate"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#fb8500"
         android:text="Delete"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        app:cornerRadius="10dp" />
 
     <Button
         android:id="@+id/btnView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
         android:layout_below="@id/btnDelete"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#fb8500"
         android:text="View"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        app:cornerRadius="10dp" />
 </RelativeLayout>
