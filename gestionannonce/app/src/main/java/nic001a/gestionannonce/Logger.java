@@ -30,8 +30,8 @@ public class Logger extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mailTXT = mail.toString();
-                String passTXT = password.toString();
+                String mailTXT = mail.getText().toString();
+                String passTXT = password.getText().toString();
 
                 if (mailTXT.equals("admin") && passTXT.equals("admin")) {
                     Toast.makeText(Logger.this, "Login successful", Toast.LENGTH_SHORT).show();
