@@ -9,8 +9,8 @@
         <entry key="app/src/main/res/layout/edit_activity.xml" value="0.25" />
         <entry key="app/src/main/res/layout/guest_activity.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/login_activity.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/main_activity.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/view_ad.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_activity.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/view_ad.xml" value="0.33" />
       </map>
     </option>
   </component>
