@@ -23,20 +23,23 @@ public class Logger extends AppCompatActivity {
         setContentView(R.layout.login_activity);
 
         login_button = findViewById(R.id.Login_button);
+        mail = findViewById(R.id.editTextTextEmailAddress);
+        password = findViewById(R.id.editTextTextPassword);
+
+
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Logger.this, "Login successful", Toast.LENGTH_SHORT).show();
-                login_();
-                //if (mail.toString().isEmpty() && password.toString().isEmpty()) {
-                // Toast.makeText(Logger.this, "Merci d'entrer vos information pour vous connecter", Toast.LENGTH_SHORT).show();
+                String mailTXT = mail.toString();
+                String passTXT = password.toString();
+
+                if (mailTXT.equals("admin") && passTXT.equals("admin")) {
+                    Toast.makeText(Logger.this, "Login successful", Toast.LENGTH_SHORT).show();
+                    login_();
+                } else {
+                    Toast.makeText(Logger.this, "LOGIN FAILED", Toast.LENGTH_LONG).show();
+                }
             }
-            // if (login_() == true) {
-
-
-            //}
-
-            //}
         });
 
     }
@@ -44,12 +47,6 @@ public class Logger extends AppCompatActivity {
     protected void login_() {
         Intent intent = new Intent(this, Editor.class);
         startActivity(intent);
-        //if (mail.getText().equals("admin") && password.getText().equals(("admin"))) {
-
-        //  return true;
-        //} else {
-        //    return false;
-        //}
     }
 }
 
