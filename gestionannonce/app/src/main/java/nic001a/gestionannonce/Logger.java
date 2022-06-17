@@ -26,30 +26,30 @@ public class Logger extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (mail.toString().isEmpty() && password.toString().isEmpty()) {
-                    Toast.makeText(Logger.this, "Merci d'entrer vos information pour vous connecter", Toast.LENGTH_SHORT).show();
-                }
-                if (login_() == true) {
-                    Toast.makeText(Logger.this, "Login successful", Toast.LENGTH_SHORT).show();
-                    login_();
-                }
-
+                Toast.makeText(Logger.this, "Login successful", Toast.LENGTH_SHORT).show();
+                login_();
+                //if (mail.toString().isEmpty() && password.toString().isEmpty()) {
+                // Toast.makeText(Logger.this, "Merci d'entrer vos information pour vous connecter", Toast.LENGTH_SHORT).show();
             }
+            // if (login_() == true) {
+
+
+            //}
+
+            //}
         });
 
     }
 
-
-    protected boolean login_() {
+    protected void login_() {
         Intent intent = new Intent(this, Editor.class);
         startActivity(intent);
-        if (mail.getText().equals("admin") && password.getText().equals(("admin"))) {
+        //if (mail.getText().equals("admin") && password.getText().equals(("admin"))) {
 
-            return true;
-        } else {
-            return false;
-        }
+        //  return true;
+        //} else {
+        //    return false;
+        //}
     }
 }
 

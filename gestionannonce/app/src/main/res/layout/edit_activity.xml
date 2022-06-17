@@ -1,56 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".Editor">
 
     <EditText
-        android:id="@+id/idEdtAdemail"
+        android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Entrer votre email" />
+        android:layout_below="@+id/name"
+        android:hint="Votre contact"
+        android:inputType="number"
+        android:textSize="24dp"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Entrer les details de l'annonce"
+        android:textStyle="bold"
+        android:textSize="24dp" />
 
     <EditText
-        android:id="@+id/idEdtAd_ID"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Entrer l'ID de votre annonce" />
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="15dp"
+        android:hint="Titre de votre annonce"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
 
     <EditText
-        android:id="@+id/idEdtAdDescription"
+        android:id="@+id/dob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Enter la description de votre annonce" />
+        android:layout_below="@+id/contact"
+        android:hint="Description"
+        android:inputType="text"
+        android:textSize="24dp" />
 
     <EditText
-        android:id="@+id/idEdtAdphone"
+        android:id="@+id/mail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Entrer votre numero de telephone" />
+        android:layout_below="@+id/dob"
+        android:hint="votre email"
+        android:inputType="text"
+        android:textSize="24dp" />
 
     <Button
-        android:id="@+id/idBtnAddAd"
-        android:layout_width="393dp"
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Ajouter l'Annonce"
-        app:cornerRadius="20dp"
-        android:textAllCaps="false" />
+        android:layout_below="@id/mail"
+        android:layout_marginTop="30dp"
+        android:text="Insert"
+        android:textSize="24dp" />
+
     <Button
-        android:id="@+id/idBtnListAd"
-        android:layout_width="393dp"
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Toutes les annonces"
-        app:cornerRadius="20dp"
-        android:textAllCaps="false" />
+        android:layout_below="@id/btnInsert"
+        android:text="Update"
+        android:textSize="24dp" />
 
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:text="Delete"
+        android:textSize="24dp" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:text="View"
+        android:textSize="24dp" />
+</RelativeLayout>
